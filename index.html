@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maria Pinelopi Paparousopoulou – SEO & Digital Marketing</title>
+  <meta name="description" content="SEO & Digital Marketing Specialist. SEO audits, technical/on‑page SEO, and paid ads (Google & Meta)." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%230ea5e9'/%3E%3Ctext x='50' y='58' text-anchor='middle' font-size='54' font-family='Arial' fill='white'%3EC%3C/text%3E%3C/svg%3E" />
+  <meta property="og:title" content="Maria Pinelopi Paparousopoulou – SEO & Digital Marketing" />
+  <meta property="og:description" content="Machine Learning Engineer & Back‑end developer. Portfolio, projects, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Charis+Papadopoulos" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <!-- Tailwind via CDN (no build step) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind config (optional extra colors)
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#e6f7ff', 100:'#bae6fd', 200:'#7dd3fc', 300:'#38bdf8',
+              400:'#0ea5e9', 500:'#0284c7', 600:'#0369a1', 700:'#075985', 800:'#0c4a6e', 900:'#0a3861'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+  <script>
+    // --- Example data you can edit later ---
+    const DATA = {
+      name: "Maria Pinelopi Paparousopoulou",
+      role: "SEO & Digital Marketing Specialist",
+      location: "Panorama, Thessaloniki, Greece",
+      email: "mpaparousopoulou@outlook.com",
+      links: {
+        //github: "https://github.com/", // optional
+        linkedin: "https://www.linkedin.com/in/maria-pinelopi-p-39275a15b/",
+        //x: "https://x.com/",
+        website: ""
+      },
+      about: `Passionate SEO & digital marketer with hands‑on experience in SEO audits, on‑page/technical optimization, and paid campaigns on Google & Meta. Strong organizational and communication skills from admin & customer‑facing roles; I enjoy pairing analytics with creativity to drive results.`,
+      skills: [
+        "SEO Audits", "Technical SEO", "On‑Page SEO", "Keyword Research", "Content Optimization",
+        "Google Ads", "Meta Ads", "Google Analytics", "Google Search Console",
+        "SEO tools", "Canva", "CRM systems", "Microsoft Office", "Google Docs"
+      ],
+      projects: [
+        {
+          title: "ΒΙΟΝΟΣΗΛΕΙΑ Μ.Π. – Full‑funnel Ads",
+          description: "Developed and executed the complete digital advertising strategy: campaign setup, creative assets, performance tracking, and iteration across Google & Meta.",
+          tags: ["Google Ads", "Meta Ads", "Strategy"],
+          year: 2025,
+          repo: "",
+          demo: "#",
+          image: "https://via.placeholder.com/960x540.png?text=Ads+Strategy"
+        },
+        {
+          title: "Multi‑client SEO Audits",
+          description: "Conducted comprehensive audits: crawl health, indexing, site architecture, CWV, on‑page/content gaps, and prioritized roadmaps.",
+          tags: ["SEO Audit", "Technical SEO", "On‑Page"],
+          year: 2025,
+          repo: "",
+          demo: "#",
+          image: "https://via.placeholder.com/960x540.png?text=SEO+Audit"
+        },
+        {
+          title: "Local Service Provider – SEO",
+          description: "Led an SEO project improving organic visibility via content optimization and technical fixes (meta, headings, internal links, speed).",
+          tags: ["SEO", "Content", "Technical"],
+          year: 2024,
+          repo: "",
+          demo: "#",
+          image: "https://via.placeholder.com/960x540.png?text=Local+SEO"
+        }
+      ],
+      experience: [
+        { company: "Webcelerate", role: "Intern – SEO & Digital Marketing", period: "Jan 2025 — Present", bullets: [
+          "Ran SEO audits and presented actionable recommendations.",
+          "Built and optimized Google & Meta ad campaigns (assets, tracking, iteration).",
+          "Led on‑page & technical SEO improvements to lift organic visibility."
+        ]},
+        { company: "Panagiotis G. Tsolakidis (Environmental Consultant)", role: "Administrative Assistant", period: "Jun 2023 — Sep 2024", bullets: [
+          "Coordinated online Info Days (LIFE PROWhiBIT).",
+          "Managed stakeholder communication and compliance tracking."
+        ]},
+        { company: "Aegean Airlines", role: "Call Center Agent", period: "May — Dec 2022", bullets: [
+          "Handled bookings/changes and delivered customer‑centric service."
+        ]},
+        { company: "Central Texas College HQ – Europe Campus", role: "Payroll‑Personnel Specialist", period: "Mar 2019 — Jul 2021", bullets: [
+          "Processed payroll for 100+ employees; Employee of the Quarter (AY 2019‑2020).",
+          "Supported personnel management and social media (Jan–Jun 2020)."
+        ]}
+      ],
+      education: [
+        { school: "Knowcrunch", degree: "Masterclass in Digital Marketing", period: "Sep — Dec 2024" },
+        { school: "University of the Aegean", degree: "BA Mediterranean Studies (Intl. Relations & Organisations)", period: "2013 — 2018" }
+      ],
+      heroActions: [
+        { label: "Download CV", href: "#", primary: true },
+        { label: "Contact", href: "#contact" }
+      ]
+    };
+
+    // SEO structured data (update later)
+    const PERSON_LDJSON = {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: DATA.name,
+      jobTitle: DATA.role,
+      email: DATA.email,
+      url: DATA.links.website,
+      sameAs: Object.values(DATA.links)
+    };
+  </script>
+</head>
+<body class="bg-white text-slate-800 dark:bg-slate-950 dark:text-slate-100">
+  <script>
+    // Dark mode (persisted)
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800/60">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="#" class="font-semibold text-slate-900 dark:text-white">{ <span class="text-brand-400">charis</span> }</a>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#projects" class="hover:text-brand-400">Projects</a>
+        <a href="#experience" class="hover:text-brand-400">Experience</a>
+        <a href="#skills" class="hover:text-brand-400">Skills</a>
+        <a href="#contact" class="hover:text-brand-400">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="themeToggle" class="rounded-xl border px-3 py-1.5 text-sm border-slate-300 dark:border-slate-700">
+          Toggle theme
+        </button>
+        <a href="#contact" class="hidden sm:inline-block rounded-xl bg-brand-400 text-white px-3 py-1.5 text-sm font-medium hover:bg-brand-500">Hire me</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="mx-auto max-w-6xl px-4 py-14 md:py-20">
+    <div class="grid md:grid-cols-[1.2fr,0.8fr] gap-10 items-center">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-bold leading-tight" id="heroName"></h1>
+        <p class="mt-4 text-lg text-slate-600 dark:text-slate-300" id="heroRole"></p>
+        <p class="mt-4" id="heroAbout"></p>
+        <div class="mt-6 flex flex-wrap gap-3" id="heroActions"></div>
+        <div class="mt-6 flex items-center gap-4 text-sm text-slate-500 dark:text-slate-400">
+          <!-- <a id="lnkGithub" class="hover:text-brand-400" target="_blank" rel="noreferrer">GitHub</a> -->
+          <a id="lnkLinkedin" class="hover:text-brand-400" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a id="lnkX" class="hover:text-brand-400" target="_blank" rel="noreferrer">X</a>
+          <a id="lnkSite" class="hover:text-brand-400" target="_blank" rel="noreferrer">Website</a>
+          <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Available for freelance</span>
+        </div>
+      </div>
+      <div class="justify-self-center">
+        <img class="rounded-2xl w-56 h-56 md:w-72 md:h-72 object-cover shadow-xl ring-1 ring-slate-200 dark:ring-slate-800" alt="Avatar" src="https://via.placeholder.com/512.png?text=CP" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-slate-50 dark:bg-slate-900/30 py-14">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="flex items-end justify-between">
+        <h2 class="text-2xl md:text-3xl font-bold">Projects</h2>
+        <div class="text-sm flex items-center gap-2">
+          <label for="tagFilter">Filter:</label>
+          <select id="tagFilter" class="rounded-lg border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 px-2 py-1"></select>
+        </div>
+      </div>
+      <div id="projectsGrid" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="py-14">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Experience</h2>
+      <ol class="mt-6 relative border-s border-slate-200 dark:border-slate-800" id="expList"></ol>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-slate-50 dark:bg-slate-900/30 py-14">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Skills</h2>
+      <div class="mt-6 flex flex-wrap gap-2" id="skillsChips"></div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-14">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Education</h2>
+      <div class="mt-6 space-y-4" id="eduList"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gradient-to-b from-slate-50 to-white dark:from-slate-900/30 dark:to-slate-950 py-14">
+    <div class="mx-auto max-w-6xl px-4">
+      <h2 class="text-2xl md:text-3xl font-bold">Get in touch</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-8">
+        <form id="contactForm" class="space-y-4" action="https://formspree.io/f/mjkjbpjb" method="POST">
+          <div>
+            <label class="block text-sm mb-1">Your email</label>
+            <input required type="email" name="email" class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 px-3 py-2" placeholder="you@example.com" />
+          </div>
+          <div>
+            <label class="block text-sm mb-1">Message</label>
+            <textarea required name="message" class="w-full rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950 px-3 py-2 h-32" placeholder="Hi Maria, I’d like to discuss…"></textarea>
+          </div>
+          <!-- Honeypot field to deter bots -->
+          <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
+          <input type="hidden" name="_subject" value="New message from your portfolio" />
+          <button class="rounded-xl bg-brand-400 text-white px-4 py-2 font-medium hover:bg-brand-500">Send</button>
+        </form>
+        <div class="space-y-2 text-sm">
+          <p><strong>Email:</strong> <a class="text-brand-500 hover:underline" id="contactEmail"></a></p>
+          <p><strong>Location:</strong> <span id="contactLocation"></span></p>
+          <p><strong>Profiles:</strong> <a id="contactGitHub" class="text-brand-500 hover:underline" target="_blank">GitHub</a> · <a id="contactLinkedIn" class="text-brand-500 hover:underline" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 dark:border-slate-800">
+    <div class="mx-auto max-w-6xl px-4 py-6 text-sm text-slate-500 dark:text-slate-400 flex justify-between">
+      <span>© <span id="year"></span> <span id="footerName"></span>. All rights reserved.</span>
+      <a href="#" class="hover:text-brand-400">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    // --- Render helpers ---
+    function $(sel){ return document.querySelector(sel); }
+    function el(tag, cls){ const e=document.createElement(tag); if(cls) e.className=cls; return e; }
+
+    function renderHero(){
+      $('#heroName').textContent = DATA.name;
+      $('#heroRole').textContent = DATA.role;
+      $('#heroAbout').textContent = DATA.about;
+      $('#lnkGithub').href = DATA.links.github;
+      $('#lnkLinkedin').href = DATA.links.linkedin;
+      $('#lnkX').href = DATA.links.x;
+      $('#lnkSite').href = DATA.links.website;
+      const c = $('#heroActions');
+      DATA.heroActions.forEach(a => {
+        const b = el('a', `rounded-xl px-4 py-2 text-sm font-medium border ${a.primary ? 'bg-brand-400 text-white hover:bg-brand-500 border-transparent' : 'border-slate-300 dark:border-slate-700 hover:border-brand-400'}`);
+        b.href = a.href; b.textContent = a.label; c.appendChild(b);
+      });
+    }
+
+    function renderProjects(){
+      const grid = $('#projectsGrid'); grid.innerHTML = '';
+      const tags = new Set(['All']);
+      DATA.projects.forEach(p => p.tags.forEach(t => tags.add(t)));
+      const sel = $('#tagFilter'); sel.innerHTML = '';
+      Array.from(tags).forEach(t => { const o=el('option'); o.value=t; o.textContent=t; sel.appendChild(o); });
+
+      function draw(selected){
+        grid.innerHTML = '';
+        DATA.projects
+          .filter(p => selected==='All' || p.tags.includes(selected))
+          .sort((a,b) => b.year - a.year)
+          .forEach(p => {
+            const card = el('article', 'rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 hover:shadow-xl transition');
+            const img = el('img', 'w-full h-44 object-cover'); img.src = p.image; img.alt = p.title; card.appendChild(img);
+            const body = el('div', 'p-4');
+            const h3 = el('h3', 'font-semibold text-lg'); h3.textContent = p.title; body.appendChild(h3);
+            const pdesc = el('p', 'mt-1 text-sm text-slate-600 dark:text-slate-300'); pdesc.textContent = p.description; body.appendChild(pdesc);
+            const meta = el('div', 'mt-3 flex flex-wrap gap-2');
+            p.tags.forEach(t => { const tag=el('span','text-xs px-2 py-1 rounded-full bg-slate-100 dark:bg-slate-800'); tag.textContent=t; meta.appendChild(tag); });
+            body.appendChild(meta);
+            const links = el('div', 'mt-4 flex gap-3');
+            if(p.repo){ const a=el('a','text-sm text-brand-500 hover:underline'); a.href=p.repo; a.target='_blank'; a.textContent='Repo'; links.appendChild(a); }
+            if(p.demo && p.demo !== '#'){ const a=el('a','text-sm text-brand-500 hover:underline'); a.href=p.demo; a.target='_blank'; a.textContent='Demo'; links.appendChild(a); }
+            const year = el('span','ml-auto text-xs text-slate-500'); year.textContent = p.year; links.appendChild(year);
+            body.appendChild(links);
+            card.appendChild(body);
+            grid.appendChild(card);
+          });
+      }
+      sel.addEventListener('change', e => draw(e.target.value));
+      draw('All');
+    }
+
+    function renderExperience(){
+      const list = $('#expList'); list.innerHTML = '';
+      DATA.experience.forEach((x,i) => {
+        const li = el('li','ps-6 pb-8');
+        const dot = el('span','absolute -left-1.5 mt-2 h-3 w-3 rounded-full bg-brand-400'); li.appendChild(dot);
+        const h3 = el('h3','font-semibold'); h3.textContent = `${x.role} · ${x.company}`; li.appendChild(h3);
+        const p = el('p','text-sm text-slate-500'); p.textContent = x.period; li.appendChild(p);
+        const ul = el('ul','mt-2 list-disc ms-4 text-sm');
+        x.bullets.forEach(b => { const li2=el('li'); li2.textContent=b; ul.appendChild(li2); });
+        li.appendChild(ul);
+        list.appendChild(li);
+      });
+    }
+
+    function renderSkills(){
+      const wrap = $('#skillsChips'); wrap.innerHTML = '';
+      DATA.skills.forEach(s => {
+        const chip = el('span','px-3 py-1.5 text-sm rounded-full border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-950');
+        chip.textContent = s; wrap.appendChild(chip);
+      });
+    }
+
+    function renderEducation(){
+      const box = $('#eduList');
+      DATA.education.forEach(e => {
+        const card = el('div','rounded-2xl border border-slate-200 dark:border-slate-800 p-4');
+        const h = el('h3','font-semibold'); h.textContent = `${e.degree} — ${e.school}`; card.appendChild(h);
+        const p = el('p','text-sm text-slate-500'); p.textContent = e.period; card.appendChild(p);
+        box.appendChild(card);
+      });
+    }
+
+    function renderContact(){
+      $('#contactEmail').textContent = DATA.email; $('#contactEmail').href = `mailto:${DATA.email}`;
+      $('#contactLocation').textContent = DATA.location;
+      $('#contactGitHub').href = DATA.links.github;
+      $('#contactLinkedIn').href = DATA.links.linkedin;
+      $('#footerName').textContent = DATA.name; $('#year').textContent = new Date().getFullYear();
+    }
+
+    // Theme toggle
+    document.addEventListener('click', (e) => {
+      if(e.target.id === 'themeToggle'){
+        const isDark = document.documentElement.classList.toggle('dark');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      }
+    });
+
+    // Boot
+    renderHero();
+    renderProjects();
+    renderExperience();
+    renderSkills();
+    renderEducation();
+    renderContact();
+
+    // Contact form AJAX submit for Formspree
+    (function(){
+      const form = document.getElementById('contactForm');
+      if(!form) return;
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        // Honeypot check
+        const honey = form.querySelector('input[name="website"]');
+        if (honey && honey.value) { return; }
+        try {
+          const res = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          });
+          if (res.ok) { alert('Thanks! Your message was sent.'); form.reset(); }
+          else { alert('There was a problem sending your message. Please try again later.'); }
+        } catch (err) {
+          alert('Network error. Please try again later.');
+        }
+      });
+    })();
+
+    // Inject JSON‑LD
+    const ld = document.createElement('script');
+    ld.type = 'application/ld+json';
+    ld.textContent = JSON.stringify(PERSON_LDJSON);
+    document.head.appendChild(ld);
+  </script>
+</body>
+</html>
